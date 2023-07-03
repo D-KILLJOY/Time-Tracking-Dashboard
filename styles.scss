@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$Very-dark-blue: hsl(226, 43%, 10%);
+$Dark-blue: hsl(235, 46%, 20%);
+$Desaturated-blue: hsl(235, 45%, 61%);
+$Pale-Blue: hsl(236, 100%, 87%);
+
+$Blue: hsl(246, 80%, 60%);
+
+$Light-red-work: hsl(15, 100%, 70%); //  (work)
+$Soft-blue: hsl(195, 74%, 62%); //  (play)
+$Light-red-study: hsl(348, 100%, 68%); //  (study)
+$Lime-green: hsl(145, 58%, 55%); //  (exercise)
+$Violet: hsl(264, 64%, 52%); //(social)
+$Soft-orange: hsl(43, 84%, 65%); // (self care)
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 62.5%;
+	color: #fff;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	background-color: $Very-dark-blue;
+
+	font-family: "Rubik", sans-serif;
+}
+
+img,
+svg {
+	display: block;
+}
+
+li {
+	list-style: none;
+}
+
+.main-con {
+	width: inherit;
+	height: inherit;
+	padding: 1.5rem;
+	display: grid;
+	gap: 2.5rem;
+
+	@media (min-width: 1024px) {
+		grid-template-columns: auto auto;
+		place-content: center;
+	}
+}
+
+.profile {
+	background-color: $Dark-blue;
+	border-radius: 2rem;
+
+	.card {
+		background-color: $Blue;
+		border-radius: 2rem;
+		padding: 3rem 2.5rem;
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+
+		@media (min-width: 1024px) {
+			flex-direction: column;
+			align-items: flex-start;
+			padding-bottom: 10rem;
+			padding-right: 10rem;
+		}
+
+		img {
+			width: 8rem;
+			border: 3px solid #fff;
+			border-radius: 50%;
+		}
+	}
+
+	.profile-details {
+		@media (min-width: 1024px) {
+			margin-top: 1rem;
+		}
+		h2 {
+			font-size: 1.6rem;
+			font-weight: 400;
+			color: $Desaturated-blue;
+		}
+
+		h1 {
+			font-size: 2.3rem;
+			font-weight: 300;
+			color: $Pale-Blue;
+			font-weight: 300;
+
+			@media (min-width: 1024px) {
+				font-size: 3.5rem;
+				display: flex;
+				flex-direction: column;
+			}
+		}
+	}
+}
+
+.nav-list {
+	display: flex;
+	padding: 2.3rem 3rem;
+	justify-content: space-between;
+	font-size: 1.9rem;
+	font-weight: 400;
+	color: $Desaturated-blue;
+
+	@media (min-width: 1024px) {
+		flex-direction: column;
+		line-height: 2.5;
+	}
+
+	.nav-item {
+		cursor: pointer;
+	}
+
+	.nav-item:hover {
+		color: #fff;
+	}
+
+	.active {
+		color: #fff;
+		font-weight: 400;
+	}
+}
+
+.dashboard {
+	display: grid;
+	gap: 2rem;
+
+	@media (min-width: 768px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media (min-width: 1024px) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.work {
+		background-color: $Light-red-work;
+	}
+	.play {
+		background-color: $Soft-blue;
+	}
+	.study {
+		background-color: $Light-red-study;
+	}
+	.exercise {
+		background-color: $Lime-green;
+	}
+	.social {
+		background-color: $Violet;
+	}
+	.self-care {
+		background-color: $Soft-orange;
+	}
+
+	.activity {
+		border-radius: 2rem;
+		position: relative;
+		height: 100%;
+		overflow: hidden;
+
+		@media (min-width: 1024px) {
+			width: 25rem;
+		}
+
+		.img-con {
+			padding: 2rem;
+			overflow: hidden;
+			padding-bottom: 0;
+			height: 3.5rem;
+		}
+
+		img {
+			margin-left: auto;
+			width: 7rem;
+			position: relative;
+			top: -3rem;
+		}
+
+		.activity-details {
+			background-color: $Dark-blue;
+			padding: 3rem;
+			border-radius: 2rem;
+			height: 100%;
+
+			cursor: pointer;
+
+			@media (min-width: 1024px) {
+				padding: 3rem;
+			}
+		}
+
+		.activity-details:hover {
+			background-color: hsla(236, 42%, 35%, 0.959);
+		}
+
+		.title {
+			display: flex;
+			justify-content: space-between;
+			font-size: 1.8rem;
+			margin-bottom: 1.5rem;
+
+			@media (min-width: 1024px) {
+				font-size: 2rem;
+			}
+		}
+
+		.time-spent {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			@media (min-width: 1024px) {
+				flex-direction: column;
+				align-items: flex-start;
+			}
+			.current {
+				font-size: 3rem;
+				font-weight: 300;
+
+				@media (min-width: 1024px) {
+					font-size: 5rem;
+					margin-top: 2rem;
+					margin-bottom: 1rem;
+				}
+			}
+
+			.previous {
+				font-size: 1.5rem;
+				color: $Pale-Blue;
+
+				@media (min-width: 1024px) {
+					margin-top: 1rem;
+				}
+			}
+		}
+	}
+}
+
+.attribution {
+	font-size: 1.4rem;
+	text-align: center;
+
+	@media (min-width: 1024px) {
+		font-size: 2rem;
+		margin-top: -4rem;
+	}
+}
+.attribution a {
+	color: $Lime-green;
+}

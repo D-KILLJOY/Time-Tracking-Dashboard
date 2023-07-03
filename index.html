@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Time tracking dashboard</title>
+		<link rel="stylesheet" href="./dist/styles.css" />
+	</head>
+	<body>
+		<main class="main-con">
+			<section class="profile">
+				<div class="card">
+					<img src="./images/image-jeremy.png" alt="Jeremy Robson" />
+					<article class="profile-details">
+						<h2>Report for</h2>
+						<h1>Jeremy <span>Robson</span></h1>
+					</article>
+				</div>
+				<nav>
+					<ul class="nav-list">
+						<li class="nav-item" id="daily">Daily</li>
+						<li class="nav-item active" id="weekly">Weekly</li>
+						<li class="nav-item" id="monthly">Monthly</li>
+					</ul>
+				</nav>
+			</section>
+			<section class="dashboard">
+				<!-- WORK -->
+				<div class="activity work" id="work">
+					<div class="img-con">
+						<img src="./images/icon-work.svg" alt="work Icon" />
+					</div>
+					<article class="activity-details">
+						<p class="title">Work <span>***</span></p>
+						<div class="time-spent">
+							<p class="current"><span class="curr-time">32</span>hrs</p>
+							<p class="previous">
+								<span class="prev-text">Last Week</span> -
+								<span class="prev-time">36</span>hrs
+							</p>
+						</div>
+					</article>
+				</div>
+				<!-- WORK -->
+				<!-- PLAY -->
+				<div class="activity play" id="play">
+					<div class="img-con">
+						<img src="./images/icon-play.svg" alt="play Icon" />
+					</div>
+					<article class="activity-details">
+						<p class="title">Play <span>***</span></p>
+						<div class="time-spent">
+							<p class="current"><span class="curr-time">33</span>hrs</p>
+							<p class="previous">
+								<span class="prev-text">Last Week</span> -
+								<span class="prev-time">36</span>hrs
+							</p>
+						</div>
+					</article>
+				</div>
+				<!-- PLAY -->
+				<!-- STUDY -->
+				<div class="activity study" id="study">
+					<div class="img-con">
+						<img src="./images/icon-study.svg" alt="study Icon" />
+					</div>
+					<article class="activity-details">
+						<p class="title">Study <span>***</span></p>
+						<div class="time-spent">
+							<p class="current"><span class="curr-time">32</span>hrs</p>
+							<p class="previous">
+								<span class="prev-text">Last Week</span> -
+								<span class="prev-time">36</span>hrs
+							</p>
+						</div>
+					</article>
+				</div>
+				<!-- STUDY -->
+				<!-- EXERCISE -->
+				<div class="activity exercise" id="exercise">
+					<div class="img-con">
+						<img src="./images/icon-exercise.svg" alt="exercise Icon" />
+					</div>
+					<article class="activity-details">
+						<p class="title">Exercise <span>***</span></p>
+						<div class="time-spent">
+							<p class="current"><span class="curr-time">32</span>hrs</p>
+							<p class="previous">
+								<span class="prev-text">Last Week</span> -
+								<span class="prev-time">36</span>hrs
+							</p>
+						</div>
+					</article>
+				</div>
+				<!-- EXERCISE -->
+				<!-- SOCIAL -->
+				<div class="activity social" id="social">
+					<div class="img-con">
+						<img src="./images/icon-social.svg" alt="social Icon" />
+					</div>
+					<article class="activity-details">
+						<p class="title">Social <span>***</span></p>
+						<div class="time-spent">
+							<p class="current"><span class="curr-time">32</span>hrs</p>
+							<p class="previous">
+								<span class="prev-text">Last Week</span> -
+								<span class="prev-time">36</span>hrs
+							</p>
+						</div>
+					</article>
+				</div>
+				<!-- SOCIAL -->
+				<!-- SELF CARE -->
+				<div class="activity self-care" id="self-care">
+					<div class="img-con">
+						<img src="./images/icon-self-care.svg" alt="selfcare Icon" />
+					</div>
+					<article class="activity-details">
+						<p class="title">Self Care <span>***</span></p>
+						<div class="time-spent">
+							<p class="current"><span class="curr-time">32</span>hrs</p>
+							<p class="previous">
+								<span class="prev-text">Last Week</span> -
+								<span class="prev-time">36</span>hrs
+							</p>
+						</div>
+					</article>
+				</div>
+				<!-- SELF CARE -->
+			</section>
+		</main>
+
+		<div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by
+			<a href="https://linktr.ee/didiauche" target="_blank">Didia Uchenna</a>.
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
